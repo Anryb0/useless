@@ -119,11 +119,7 @@
       <div class="further-info">
         <!-- insert images with srcsets and sizes -->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <picture>
-            <source media="(max-width: 480px)" srcset="ff120.png"/>
-            <source media="(min-width: 481px)" srcset="ff400.png"/>
-            <img src="ff400.png">
-          </picture>
+          <img srcset="ff120.png 120w, ff400.png 400w" sizes="(max-width:480px) 120 px, 400 px" src="ff400.png"/>
         </a>
         <a href="https://www.mozilla.org/">
           <picture>
