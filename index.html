@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<!-- last-child only-child :invalid -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Formatting a biography</title>
+    <style>
+      body {
+        background-color: #fff;
+        color: #333;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 1em;
+        margin: 0;
+      }
+    article p:first-child {
+      color:blue
+    }
+    article a:last-child:hover {
+      color:green
+    }
+    article a:last-child:focus {
+      color:pink
+    }
+      h1 {
+        color: hotpink;
+        font-size: 2em;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        border-bottom: 10px dotted purple;
+      }
+
+      h2 {
+        font-size: 1.5em;
+        font-style: italic;
+      }
+      article > p{
+        font-weight: bold
+      }
+      h1 + p{
+        background-color: green;
+      }
+      .job-title {
+        color: #999999;
+        font-weight: bold;
+      }
+
+      li.zdraste{
+        font-weight: bold
+      }
+      article p::first-line{
+        font-size:200%
+      }
+      article::after{
+        content:"yes";
+        display: block;
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+      }
+      ul.privet {
+        padding: 50px;
+        background-color: #eeeeee;
+        border: 5px solid purple;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <h1>Jane Doe</h1>
+    <div class="job-title">Web Developer</div>
+    <p>
+      Far far away, behind the word mountains, far from the countries Vokalia
+      and Consonantia, there live the blind texts. Separated they live in
+      Bookmarksgrove right at the coast of the Semantics, a large language
+      ocean.
+    </p>
+
+    <p>
+      A small river named Duden flows by their place and supplies it with the
+      necessary regelialia. It is a paradisematic country, in which roasted
+      parts of sentences fly into your mouth.
+    </p>
+
+    <h2>Contact information</h2>
+    <ul class="privet">
+      <li class="zdraste">
+        Email:
+        <a href="mailto:jane@example.com">jane@example.com</a>
+      </li>
+      <li>
+        Web:
+        <a href="https://example.com">https://example.com</a>
+      </li>
+      <li>Tel: 123 45678</li>
+    </ul>
+  <article>
+    <p><a href ="youtube.com">111111</a></p>
+    <p><a href="youtube.com">222222</a></p>
+  </article>
+  <article>
+    <ul>
+      <p>111111</p>
+    </ul>
+    <p>222222</p>
+    <p><a href="https://developer.mozilla.org/ru/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements">там список всей этой шняги</a>
+  </article>
+  </body>
+</html>
