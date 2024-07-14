@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Anryb0">
+    <meta name="description" content="azaza mne len">
+    <link rel="shortcut icon" href="../2.jpg">
+    <title>azaza</title>
+    <style>
+        h1{
+        display: block;
+        border: 10px dotted orange;
+        font-size: 32px;
+        font-weight: bold;
+        background-color: rgba(141, 212, 138, 0.8);
+        color: rgb(141, 0, 138);
+        width: 100px;
+        height: 50px;
+        overflow:auto auto;
+        }
+                p{
+        display: block;
+        border: 10px double green;
+        font-size: 24px;
+        font-weight: bold;
+        background-color: rgba(0, 99, 71, 0.8);
+        color: white;
+        width: 300px;
+        height: 100px;
+        overflow: auto;
+        }
+        .yes {
+        border: 10px solid black;
+        width: 200px;
+        height: 100px;
+        object-fit: cover;
+        }
+        img{
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>zdraste zdraste zdraste</h1>
+    </header>
+    <main>
+        <p>кароче есть overflow. там бывает x и y. сначала пишешь x потом y. hidden - тупо скрыть,scroll - всегда полосы, auto - полосы когда надо</p>
+        <p>для того, чтобы картинка не вылезала из коробки надо поставить max-width: 100%. это, вообще-то, не айс.</p>
+        <p>типо вот картинка по дефолту. не айс. можно ограничить процентами, а можно дать свойства object-fit</p>
+        <div class="yes">
+        <img src="../2.jpg" >
+        </div>
+    </main>
+</body>
+</html>
