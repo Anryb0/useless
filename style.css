@@ -14,7 +14,7 @@ nav a:hover {
     background-color: black;
 }
 h1 {
-position: sticky;
+    position: sticky;
     margin-bottom: 10px;
 }
 
@@ -22,7 +22,7 @@ header, footer, nav {
     text-align: center;
 }
 footer {
-position: fixed; bottom: 0; left: 0; width: 100%;
+    position: fixed; bottom: 0; left: 0; width: 100%;
 }
 
 
