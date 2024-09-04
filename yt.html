@@ -1,37 +1,49 @@
 <!doctype html>
-<html lang = "ru">
+<html lang="ru">
   <head>
     <link rel="shortcut icon" href="icon.png">
     <meta charset="utf-8">
-    <title>пародия на ютуб</title>
+    <title>Пародия на YouTube</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #f2f2f2;
-            text-align: center;
-            padding: 10px 0;
-        }  
-        h1 {
-            color: #333;
-            font-size: 24px;
-        }
-        main {
-            padding: 20px;
-        }
-        p {
-            font-size: 16px;
-            line-height: 1.5;
-        }
-        video {
-            width: 30%;
-            min-width: 480px;
-            height: auto;
-            display: inline;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+      }
+      header {
+        background-color: #ff0000;
+        text-align: center;
+        padding: 20px 0;
+        color: white;
+      }
+      h1 {
+        font-size: 32px;
+        margin: 0;
+      }
+      main {
+        padding: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .video-container {
+        background-color: white;
+        padding: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #555;
+      }
+      video {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 8px;
+      }
     </style>
   </head>
   <body>
@@ -39,16 +51,20 @@
       <h1>Anryb0 Vidos</h1>
     </header>
     <main>
-      <p>этот видос должен быть доступен всегда:</p>
-      <video controls width="60%" height="auto" loop preload="auto">
-        <source src="myatoi.mp4" type="video/mp4">
-        <p>не пашет(</p>
-      </video>
-      <p>дальше будут эксперименты с серваком</p>
-      <video controls width="60%" height="auto" loop preload="auto">
-        <source src="ftp://172.20.10.11/mk.mp4" type="video/mp4">
-        <p>не пашет(</p>
-      </video>
+      <div class="video-container">
+        <p>Этот видос должен быть доступен всегда:</p>
+        <video controls loop preload="auto">
+          <source src="myatoi.mp4" type="video/mp4">
+          Ваш браузер не поддерживает видео.
+        </video>
+      </div>
+      <div class="video-container">
+        <p>Дальше будут эксперименты с серваком:</p>
+        <video controls loop preload="auto">
+          <source src="ftp://172.20.10.11/mk.mp4" type="video/mp4">
+          Ваш браузер не поддерживает видео.
+        </video>
+      </div>
     </main>
   </body>
 </html>
