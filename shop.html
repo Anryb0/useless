@@ -220,6 +220,20 @@
                 alert("В разработке");
             });
         }
+          let cartQuantity = 0;
+            let cartTotal = 0;
+
+    function addToCart(button) {
+        let product = button.parentElement;
+        let priceString = product.querySelector("p").innerText;
+        let price = parseFloat(priceString.substring(1));
+        cartQuantity++;
+        cartTotal += price;
+
+        document.getElementById("cartQuantity").innerText = cartQuantity;
+        document.getElementById("cartTotal").innerText = cartTotal;
+        button.innerText = "в корзине";
+    }
     </script>
 </body>
 </html>
