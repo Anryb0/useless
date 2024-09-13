@@ -6,7 +6,7 @@
     <title>Anryb0 corp.</title>
     <link rel="shortcut icon" href="icon.png">
     <style>
-        body {
+          body {
             background: rgb(46,46,46);
             background: linear-gradient(90deg, rgba(46,46,46,1) 0%, rgba(0,0,0,1) 50%, rgba(46,46,46,1) 100%);
             color: white;
@@ -14,10 +14,8 @@
             font-weight: bold;
         }
         nav a {
-            padding-left: 20px;
-            padding-right: 20px;
-            border: none;
-            border-radius: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
             background-color: green;
             color: white;
             font-weight: bold;
@@ -25,6 +23,7 @@
             padding-top: 3px;
             padding-bottom: 3px;
             text-decoration: none;
+            border-radius: 5px;
         }
         nav a:hover {
             background-color: black;
@@ -37,6 +36,47 @@
         header, footer, nav {
             text-align: center;
         }
+        .reg {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .products {
+            display: grid;
+            width: 90%;
+            grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+            grid-gap: 20px;
+            border-spacing: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media screen and (max-width: 768px) {
+            .products {
+                grid-template-columns: 1fr;
+            }
+        }
+        .product {
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            transition: transform 0.3s;
+        }   
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .product img {
+            width: 240px;
+            height: 160px;
+            border-radius: 5px;
+        }
+        .product h3 {
+            margin: 10px 0;
+            color: #b1b1b1;
+        }
+        .product p {
+            color: rgb(131, 131, 131);
+        }
         button {
             background-color: green;
             color: white;
@@ -44,6 +84,18 @@
             padding: 5px 10px;
             border: none;
             border-radius: 5px;
+        }
+        .products a {
+            padding: 5px 10px;
+            background-color: green;
+            color: white;
+            font-weight: bold;
+            margin: 5px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .products a:hover {
+            background-color: black;
         }
 </style>
 </head>
