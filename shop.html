@@ -202,7 +202,7 @@
                 <h3>автобус</h3>
                 <p>$250 000</p>
                 <a href="#">подробнее</a>
-                <button class="but">в корзину</button>
+                <button class="but" onclick="addToCart(this)">в корзину</button>
               </div>
         </div>          
     </main>
@@ -220,7 +220,6 @@
         let price = parseFloat(priceString.substring(1));
         cartQuantity++;
         cartTotal += price;
-
         document.getElementById("cartQuantity").innerText = cartQuantity;
         document.getElementById("cartTotal").innerText = cartTotal;
         button.innerText = "в корзине";
