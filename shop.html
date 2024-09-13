@@ -111,6 +111,8 @@
     </nav>
     <hr>
     <main>
+        <p>Товары в корзине: <span id="cartQuantity">0</span></p>
+        <p>Общая стоимость: $<span id="cartTotal">0</span></p>
         <div class="products">
             <div class="product">
               <img src="product1.jpg" alt="Product 1">
@@ -204,26 +206,26 @@
                 <a href="#">подробнее</a>
                 <button class="but" onclick="addToCart(this)">в корзину</button>
               </div>
-        </div>          
+        </div>  
+       
     </main>
     <footer>
         <hr>
         <p>(С) 2024 Anryb0 Corp. All Rights Reserved</p>
     </footer>
     <script>
-          let cartQuantity = 0;
-            let cartTotal = 0;
-
-    function addToCart(button) {
-        let product = button.parentElement;
-        let priceString = product.querySelector("p").innerText;
-        let price = parseFloat(priceString.substring(1));
-        cartQuantity++;
-        cartTotal += price;
-        document.getElementById("cartQuantity").innerText = cartQuantity;
-        document.getElementById("cartTotal").innerText = cartTotal;
-        button.innerText = "в корзине";
-    }
+        let cartQuantity = 0;
+        let cartTotal = 0;
+        function addToCart(button) {
+            let product = button.parentElement;
+            let priceString = product.querySelector("p").innerText;
+            let price = parseFloat(priceString.substring(1));
+            cartQuantity++;
+            cartTotal += price;
+            document.getElementById("cartQuantity").innerText = cartQuantity;
+            document.getElementById("cartTotal").innerText = cartTotal;
+            button.innerText = "в корзине";
+        }
     </script>
 </body>
 </html>
