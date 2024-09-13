@@ -1,0 +1,139 @@
+        body {
+            background: rgb(46,46,46);
+            background: linear-gradient(90deg, rgba(46,46,46,1) 0%, rgba(0,0,0,1) 50%, rgba(46,46,46,1) 100%);
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        nav a {
+            padding-left: 5px;
+            padding-right: 5px;
+            background-color: green;
+            color: white;
+            font-weight: bold;
+            margin: 5px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: black;
+        }
+        h1 {
+            position: sticky;
+            margin-bottom: 10px;
+            margin-top: 30px;
+        }
+        header, footer, nav {
+            text-align: center;
+        }
+        .reg {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .products {
+            display: grid;
+            width: 90%;
+            grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+            grid-gap: 20px;
+            border-spacing: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media screen and (max-width: 768px) {
+            .products {
+                grid-template-columns: 1fr;
+            }
+        }
+        .product {
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            transition: transform 0.3s;
+        }   
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .product img {
+            width: 240px;
+            height: 160px;
+            border-radius: 5px;
+        }
+        .product h3 {
+            margin: 10px 0;
+            color: #b1b1b1;
+        }
+        .product p {
+            color: rgb(131, 131, 131);
+        }
+        button {
+            background-color: green;
+            color: white;
+            font-weight: bold;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .products a {
+            padding: 5px 10px;
+            background-color: green;
+            color: white;
+            font-weight: bold;
+            margin: 5px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .products a:hover {
+            background-color: black;
+        }
+	    .remove-button {
+		    margin: 5px;
+	    }
+    .modal {
+        display: none; /* Скрыт по умолчанию */
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto; /* Включает прокрутку, если необходимо */
+        background-color: rgb(0,0,0); /* Полупрозрачный фон */
+        background-color: rgba(0,0,0,0.4); /* Полупрозрачный фон */
+        animation: fadeIn 0.5s; /* Анимация появления */
+    }
+    .modal-content {
+        background-color: green;
+        margin: 15% auto; /* 15% сверху и центрирование */
+        padding: 20px;
+        border: 1px solid #ffffff;
+        width: 60%; /* Ширина окна */
+        border-radius: 5px;
+    }
+    .close-button {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .close-button:hover,
+    .close-button:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .modal.fade-out {
+    animation: fadeOut 0.5s forwards; /* Анимация затухания */
+}
+    /* Анимация */
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+    @keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
