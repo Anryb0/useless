@@ -230,6 +230,10 @@
     </table>
     <button onclick="Check()">Проверить</button>
     <p id="result">Результат: </p>
+    <form>
+      <label>Введите пароль: <input type="password" name="password"></label>
+      <button type="submit">Войти</button>
+    </form>
     <p>Разработчики:
         Алев Борис
     </p>
@@ -468,5 +472,18 @@ function Check() {
     resultElement.innerText = resultText;
     resultElement.style.display = "block";
 }
+    document.querySelector('form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const password = document.querySelector('input[name="password"]').value;
+  
+      if (password === '513381612') {
+        const answers = ['2', '2', '18', '16', '2', '46', '3', '1', '5', '13']; 
+        answers.forEach(function(answer, index) {
+          document.body.insertAdjacentHTML('beforeend', `<p>Вопрос ${index + 1}: ${answer}</p>`);
+    });
+  } else {
+    alert('Неправильный пароль! Попробуйте еще раз.');
+  }
+});
 </script>
 </html>
