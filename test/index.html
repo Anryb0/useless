@@ -6,41 +6,41 @@
     <title>Тест 4</title>
     <style>
          body {
-            background-color: #252525; /* Черный фон */
-            color: white; /* Зеленый текст */
-            font-family: Arial, sans-serif; /* Шрифт */
-            padding: 20px; /* Отступ */
+            background-color: #252525;
+            color: white; 
+            font-family: Arial, sans-serif; 
+            padding: 20px; 
         }
         label {
-            display: block; /* Метки на новой строке */
-            margin-bottom: 5px; /* Отступ снизу */
+            display: block;
+            margin-bottom: 5px; 
         }
         input[type="text"] {
-            padding: 10px; /* Отступ внутри поля ввода */
-            margin-bottom: 20px; /* Отступ между полями */
+            padding: 10px;
+            margin-bottom: 20px; 
             border: 2px solid #ffffff; 
             background-color: #1a1a1a; 
             color: white;
         }
-        button {
-            padding: 10px 15px; /* Отступ внутри кнопки */
-            background-color: #00ff00; /* Зеленый фон кнопки */
-            color: #000; /* Черный текст кнопки */
-            border: none; /* Без границы */
-            cursor: pointer; /* Курсор при наведении */
-            font-size: 16px; /* Размер шрифта */
-            transition: background-color 0.3s; /* Плавный переход для фона */
+        .check {
+            padding: 10px 15px; 
+            background-color: #00ff00; 
+            color: #000; 
+            border: none; 
+            cursor: pointer; 
+            font-size: 16px; 
+            transition: background-color 0.3s; 
         }
-        button:hover {
-            background-color: #33cc33; /* Меняем цвет при наведении */
+        .check:hover {
+            background-color: #33cc33;
         }
         #result {
-            display: none; /* Скрываем результат по умолчанию */
-            margin-top: 20px; /* Отступ сверху */
-            font-weight: bold; /* Жирный текст */
+            display: none; 
+            margin-top: 20px; 
+            font-weight: bold; 
         }
         div.question {
-            margin-bottom: 20px; /* Отступ между вопросами */
+            margin-bottom: 20px; 
         }
         table {
             margin-bottom: 10px;
@@ -65,6 +65,12 @@
         {
             text-align: justify;
             padding: 5px;
+        }
+        .submit {
+           background-color: #252525; 
+        }
+        form {
+            display: none;
         }
     </style>
 </head>
@@ -228,17 +234,15 @@
             </td>
         </tr>
     </table>
-    <button onclick="Check()">Проверить</button>
+    <button class="check" onclick="Check()">Проверить</button>
     <p id="result">Результат: </p>
     <form>
       <label>Введите пароль: <input type="password" name="password"></label>
-      <button type="submit">Войти</button>
     </form>
     <p>Разработчики:
         Алев Борис
     </p>
-        </tr>
-    </table>
+     <button type="submit" class="submit">Войти</button>
 </body>
 <script>
 
@@ -472,8 +476,9 @@ function Check() {
     resultElement.innerText = resultText;
     resultElement.style.display = "block";
 }
-    document.querySelector('form').addEventListener('submit', function(event) {
+    document.addEventListener('submit', function(event) {
         event.preventDefault();
+        form.style.disply = "block";
         const password = document.querySelector('input[name="password"]').value;
   
       if (password === '513381612') {
