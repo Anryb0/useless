@@ -33,7 +33,7 @@ function Check() {
         }
         var cell1 = q1.getElementById("c1");
         cell1.style.border = "3px solid green";
-        cell1.style.raduis = "5px";
+        cell1.style.borderRaduis = "5px";
     }
     else {
         q1.style.border = '7px solid red';
@@ -45,7 +45,7 @@ function Check() {
         };
         var cell1 = q1.getElementById("c1");
         cell1.style.border = "3px solid green";
-        cell1.style.raduis = "5px";
+        cell1.style.borderRaduis = "5px";
     }
     if (a2.value == '2') {
         q2.style.border = '7px solid green ';
