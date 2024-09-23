@@ -42,8 +42,8 @@ function Check() {
         for (var i = 0; i < cells.length; i++) {
             cells[i].style.border = '3px solid red';
             cells[i].style.borderRadius = "5px";
-        }
-         var cell1 = q1.getElementById("c1");
+        };
+        var cell1 = q1.getElementById("c1");
         cell1.style.border = "3px solid green";
         cell1.style.raduis = "5px";
     }
