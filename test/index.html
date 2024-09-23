@@ -242,12 +242,8 @@
     <p>Разработчики:
         Алев Борис
     </p>
-     <button type="submit" class="submit">Войти</button>
 </body>
 <script>
-
-
-
 function Check() {
     var correct = 0;
     var totalPoints = 10;
@@ -476,19 +472,5 @@ function Check() {
     resultElement.innerText = resultText;
     resultElement.style.display = "block";
 }
-    document.addEventListener('submit', function(event) {
-        event.preventDefault();
-        form.style.disply = "block";
-        const password = document.querySelector('input[name="password"]').value;
-  
-      if (password === '513381612') {
-        const answers = ['2', '2', '18', '16', '2', '46', '3', '1', '5', '13']; 
-        answers.forEach(function(answer, index) {
-          document.body.insertAdjacentHTML('beforeend', `<p>Вопрос ${index + 1}: ${answer}</p>`);
-    });
-  } else {
-    alert('Неправильный пароль! Попробуйте еще раз.');
-  }
-});
 </script>
 </html>
