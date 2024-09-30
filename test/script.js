@@ -13,8 +13,8 @@ function Check() {
             correct++;
             var cells = q.getElementsByTagName('td');
             for (var s = 0; s < cells.length; i++) {
-            cells[s].style.border = '3px solid green';
-            cells[s].style.borderRadius = "5px";
+                cells[s].style.border = '3px solid green';
+                cells[s].style.borderRadius = "5px";
             }
         }
         else {
