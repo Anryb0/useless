@@ -12,7 +12,7 @@ function Check() {
             q.style.borderRadius = "5px";
             correct++;
             var cells = q.getElementsByTagName('td');
-            for (var s = 0; s < cells.length; i++) {
+            for (var s = 0; s < cells.length; s++) {
                 cells[s].style.border = '3px solid green';
                 cells[s].style.borderRadius = "5px";
             }
@@ -21,7 +21,7 @@ function Check() {
             q.style.border = '7px solid red';
             q.style.borderRadius = "5px";
             var cells = q.getElementsByTagName('td');
-            for (var s = 0; s < cells.length; i++) {
+            for (var s = 0; s < cells.length; s++) {
                 cells[s].style.border = '3px solid red';
                 cells[s].style.borderRadius = "5px";
             };  
